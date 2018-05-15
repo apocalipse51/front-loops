@@ -6,10 +6,19 @@
     text-align: center;  
     vertical-align: middle;
     margin-top: 0; 
-    min-height: 292px;
+    padding: .5em;
+    /*min-height: 292px;*/
+    transition: .2s;
+}
+
+.product:hover {
+    background-color: rgba(0,0,0,.1);
+    transition: .5s;
+    cursor: pointer;
 }
 
 .product:nth-child(1) {
+    margin-left: 1em;
     margin-right: 1em;
 }
 
@@ -48,4 +57,34 @@
 
 .period {
     vertical-align: bottom;
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+    .product-title {
+        font-size: 1em;
+    }
+
+    .product-price {
+        font-size: 1.1em;
+    }
+
+    .product-description {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 500px) {
+    .product {
+        display: block;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .product:nth-child(1) {
+        margin-right: 0;
+    }
+    
+    .product:nth-last-child(1) {
+        margin-left: 0;
+    }
 }
