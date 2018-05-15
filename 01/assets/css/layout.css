@@ -8,10 +8,15 @@
 }
 
 .container {
-    width: 70%;
-    padding: 1em;
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    height: 55%;
+    width: 70%;    
+    padding: 2.5em;
     border-radius: 2px;
-    display: table;
-    position: relative;
-    margin: auto;    
+    box-shadow: 2px 5px 20px 5px rgba(0,0,0,.3);
 }
